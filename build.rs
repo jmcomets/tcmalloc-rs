@@ -1,3 +1,5 @@
+extern crate num_cpus;
+
 use std::env;
 use std::process::Command;
 
@@ -39,7 +41,7 @@ fn main() {
     gperftools_artifact!(".git"      => "git", "submodule", "update", "--init");
     gperftools_artifact!("configure" => "./autogen.sh");
     gperftools_artifact!("Makefile"  => "./configure", &format!("--prefix={}/dist", gperftools_dir.display()));
-    gperftools_artifact!("dist"      => "make", "install");
+    gperftools_artifact!("dist"      => "make", "-j", &format!("{}", num_cpus::get()), "install");
 
     println!("cargo:rustc-link-search={}/dist/lib", gperftools_dir.display());
 }

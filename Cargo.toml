@@ -11,4 +11,7 @@ name = "tcmalloc"
 repository = "https://github.com/jmcomets/tcmalloc-rs"
 version = "0.1.0"
 
+[build-dependencies]
+num_cpus = "1.8.0"
+
 [dependencies]
