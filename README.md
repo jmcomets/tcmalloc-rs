@@ -4,7 +4,7 @@ tcmalloc
 A drop-in [`GlobalAlloc`][1] implementation using `tcmalloc` from [gperftools][2].
 
 [![Travis badge](https://travis-ci.org/jmcomets/tcmalloc-rs.svg?branch=master)](https://travis-ci.org/jmcomets/tcmalloc-rs)
-[![crates.io badge](https://img.shields.io/crates/v/tmalloc.svg)](https://crates.io/crates/tmalloc)
+[![crates.io badge](https://img.shields.io/crates/v/tcmalloc.svg)](https://crates.io/crates/tcmalloc)
 
 # Usage
 
