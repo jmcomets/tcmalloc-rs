@@ -1,0 +1,8 @@
+[package]
+name = "tcmalloc"
+version = "0.1.0"
+authors = ["Jean-Marie Comets <jean.marie.comets@gmail.com>"]
+links = "tcmalloc"
+build = "build.rs"
+
+[dependencies]

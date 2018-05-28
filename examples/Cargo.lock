@@ -1,0 +1,11 @@
+[[package]]
+name = "tcmalloc"
+version = "0.1.0"
+
+[[package]]
+name = "tcmalloc-example"
+version = "0.1.0"
+dependencies = [
+ "tcmalloc 0.1.0",
+]
+

@@ -1,0 +1,7 @@
+[package]
+name = "tcmalloc-example"
+version = "0.1.0"
+authors = ["Jean-Marie Comets <jean.marie.comets@gmail.com>"]
+
+[dependencies]
+tcmalloc = { path = ".." }
