@@ -1,0 +1,22 @@
+language: rust
+sudo: false
+matrix:
+  include:
+    - rust: nightly
+      before_script:
+        # - sudo apt-get install google-perftools
+        - |
+            pushd /tmp
+            wget https://github.com/gperftools/gperftools/releases/download/gperftools-2.7/gperftools-2.7.tar.gz -O - | tar xfz -
+            cd gperftools-2.7
+            ./autogen.sh
+            ./configure --disable-dependency-tracking --disable-cpu-profiler --disable-heap-checker --disable-debugalloc --prefix=/usr
+            sudo make install -j 5
+            popd
+        # - ldconfig -v 2>/dev/null | grep -v ^$'\t' | sed 's/:$//' | xargs -i find {} -name libtcmalloc.so
+        # - echo "int main() { return 0; }" | gcc -ltcmalloc -xc -o /dev/null -
+script:
+  - |
+      cargo +nightly build --verbose
+      cd examples
+      cargo +nightly build --verbose
