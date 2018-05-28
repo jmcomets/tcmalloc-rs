@@ -1,14 +1,14 @@
 [package]
-name = "tcmalloc"
-version = "0.1.0"
 authors = ["Jean-Marie Comets <jean.marie.comets@gmail.com>"]
+build = "build.rs"
+categories = ["allocators"]
 description = "Drop-in global allocator using tcmalloc"
 documentation = "https://docs.rs/tcmalloc"
-repository = "https://github.com/jmcomets/tcmalloc-rs"
 keywords = ["allocator"]
-categories = ["allocators"]
 license = "MIT/Apache-2.0"
 links = "tcmalloc"
-build = "build.rs"
+name = "tcmalloc"
+repository = "https://github.com/jmcomets/tcmalloc-rs"
+version = "0.1.0"
 
 [dependencies]
