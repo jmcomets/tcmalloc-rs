@@ -1,5 +1,4 @@
 #![feature(allocator_api)]
-// #![feature(global_allocator)]
 
 use std::alloc::{GlobalAlloc, Layout, Opaque};
 
