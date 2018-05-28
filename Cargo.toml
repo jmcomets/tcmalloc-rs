@@ -2,6 +2,7 @@
 name = "tcmalloc"
 version = "0.1.0"
 authors = ["Jean-Marie Comets <jean.marie.comets@gmail.com>"]
+license = "MIT/Apache-2.0"
 links = "tcmalloc"
 build = "build.rs"
 
