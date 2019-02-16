@@ -8,11 +8,9 @@ A drop-in [`GlobalAlloc`][1] implementation using `tcmalloc` from [gperftools][2
 
 # Usage
 
-Keep in mind that as of today, `GlobalAlloc` is only available in nightly,
-hidden behind the [`global_allocator`][2] feature flag.
+Requires Rust 1.28+
 
 ```rust
-#![feature(global_allocator)]
 extern crate tcmalloc;
 
 use tcmalloc::TCMalloc;

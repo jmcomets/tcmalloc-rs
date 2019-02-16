@@ -1,4 +1,3 @@
-#![feature(global_allocator)]
 extern crate tcmalloc;
 
 use tcmalloc::TCMalloc;

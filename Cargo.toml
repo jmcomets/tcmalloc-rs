@@ -1,10 +1,11 @@
 [package]
 name = "tcmalloc"
-version = "0.1.5"
+version = "0.2.0"
 authors = ["Jean-Marie Comets <jean.marie.comets@gmail.com>"]
 description = "Drop-in global allocator using tcmalloc"
 license = "MIT/Apache-2.0"
 readme = "README.md"
+edition = "2018"
 
 repository = "https://github.com/jmcomets/tcmalloc-rs"
 documentation = "https://docs.rs/tcmalloc"
