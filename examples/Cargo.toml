@@ -5,3 +5,7 @@ authors = ["Jean-Marie Comets <jean.marie.comets@gmail.com>"]
 
 [dependencies]
 tcmalloc = { path = ".." }
+
+[features]
+default = []
+bundled = ["tcmalloc/bundled"]
