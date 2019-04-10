@@ -19,3 +19,6 @@ script:
   - |
       cargo build --verbose &&
       (cd examples && cargo build --verbose)
+
+      cargo build --verbose --all-features
+      (cd examples && cargo build --verbose --all-features)
