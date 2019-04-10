@@ -17,6 +17,5 @@ matrix:
         # - echo "int main() { return 0; }" | gcc -ltcmalloc -xc -o /dev/null -
 script:
   - |
-      cargo +nightly build --verbose
-      cd examples
-      cargo +nightly build --verbose
+      cargo build --verbose &&
+      (cd examples && cargo build --verbose)
