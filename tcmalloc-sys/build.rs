@@ -9,6 +9,7 @@ static TCMALLOC_TAG: &str = "gperftools-2.7";
 // Platforms that _someone_ says works
 static TESTED: &[&str] = &[
     "x86_64-unknown-linux-gnu",
+    "aarch64-unknown-linux-gnu",
 ];
 
 fn main() {
